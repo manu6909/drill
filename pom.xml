@@ -76,7 +76,7 @@
       Apache Hive 2.3.2. If the version is changed, make sure the jars and their dependencies are updated.
     -->
     <hive.version>2.3.2</hive.version>
-    <hadoop.version>2.7.4</hadoop.version>
+    <hadoop.version>2.8.0</hadoop.version>
     <hbase.version>2.1.1</hbase.version>
     <fmpp.version>1.0</fmpp.version>
     <freemarker.version>2.3.28</freemarker.version>
@@ -518,7 +518,7 @@
               <rules>
                 <bannedDependencies>
                   <excludes>
-                    <exclude>commons-logging</exclude>
+                    <!--<exclude>commons-logging</exclude>-->
                     <exclude>javax.servlet:servlet-api</exclude>
                     <exclude>org.mortbay.jetty:servlet-api</exclude>
                     <exclude>org.mortbay.jetty:servlet-api-2.5</exclude>
