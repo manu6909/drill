@@ -174,13 +174,13 @@
     </repository>
 
     <repository>
-      <id>sonatype-nexus-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>sonatype-nexus</id>
+      <url>https://oss.sonatype.org/content/repositories/releases</url>
       <releases>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
       </releases>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </snapshots>
     </repository>
 
