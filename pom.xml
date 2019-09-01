@@ -76,7 +76,7 @@
       Apache Hive 2.3.2. If the version is changed, make sure the jars and their dependencies are updated.
     -->
     <hive.version>2.3.2</hive.version>
-    <hadoop.version>2.8.0</hadoop.version>
+    <hadoop.version>2.8.4</hadoop.version>
     <hbase.version>2.1.1</hbase.version>
     <fmpp.version>1.0</fmpp.version>
     <freemarker.version>2.3.28</freemarker.version>
@@ -191,13 +191,13 @@
     </repository>
 
     <repository>
-      <id>sonatype-nexus</id>
-      <url>https://oss.sonatype.org/content/repositories/releases</url>
+      <id>sonatype-nexus-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
       <releases>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </releases>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
       </snapshots>
     </repository>
   </repositories>
@@ -518,6 +518,7 @@
               <rules>
                 <bannedDependencies>
                   <excludes>
+                    <!--PAI changes for hadoop 2.8, removing commons-logging from bad dependency list-->
                     <!--<exclude>commons-logging</exclude>-->
                     <exclude>javax.servlet:servlet-api</exclude>
                     <exclude>org.mortbay.jetty:servlet-api</exclude>
